@@ -16,11 +16,15 @@ const { title, description, keywords } = Astro.props
         <link rel="icon" type="image/png" href="/images/fav.png">		
         <title>{title}</title>
 	</head>
-    <Nav />
+    <body>
+        <Nav />
     
-	<slot />
+        <slot />
+        
+        <Footer/>
+
+    </body>
     
-    <Footer/>
    
 
 </html>
