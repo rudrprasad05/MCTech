@@ -1,6 +1,6 @@
 ---
-name: Acer Nitro 5
-img: /images/acer.webp
+name: Chill Printer
+img: /images/samsung.png
 price: $1499.99
 description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, est.
 specs: 
