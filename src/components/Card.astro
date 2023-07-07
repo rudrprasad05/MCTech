@@ -1,12 +1,18 @@
 ---
 const { info } = Astro.props
 ---
+<div>
+    <a href={ info.url }>
 
-<div class="col-span-1 bg-gray-800 rounded-md border border-gray-600 p-3">
-    <div class="min-h-54 md:h-40 rounded-md mb-3">
-        <img src={ info.frontmatter.img } alt="" class="w-full h-full object-cover">
-    </div>
-    <h3 class="text-xl">{ info.frontmatter.name }</h3>
-    <p class="my-3">{ info.frontmatter.description }</p>
-    <a href={ info.url } class="text-gray-400 hover:text-blue-400">More Details</a>
+        <div class="col-span-1 bg-gray-800 rounded-md border border-gray-600 p-3">
+            <div class="min-h-54 md:h-40 rounded-md mb-3">
+                <img src={ info.frontmatter.img } alt="" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl">{ info.frontmatter.name }</h3>
+            <p class="my-3">{ info.frontmatter.description }</p>
+            <a href={ info.url } class="text-gray-400 hover:text-blue-400">More Details</a>
+        </div>
+
+    </a>
+
 </div>

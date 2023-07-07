@@ -17,21 +17,24 @@ import Slider from '../components/Slider.astro';
 
 <Slider />
 
-<p class="h1">Our Products</p>
+<p class="h1" id="products">Our Products</p>
 
 <div class="grid w-4/5 grid-cols-3 mx-auto gap-20 mb-20">
 
     <HeroProductCards 
         title="computer"
         imgPath="/images/icon_computer.avif"
+        path="/computers"
     />
     <HeroProductCards 
         title="printers"
         imgPath="/images/icon_printer.png"
+        path="/printers"
     />
     <HeroProductCards 
         title="network"
         imgPath="/images/icon_router.avif"
+        path="/networks"
     />
 
 </div>
@@ -51,7 +54,7 @@ import Slider from '../components/Slider.astro';
     
 </div>
 
-<p class="h1">Talk to Us Today</p>
+<p class="h1" id="contact">Talk to Us Today</p>
 <Contact/>
 
 <style>
