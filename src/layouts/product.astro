@@ -1,0 +1,55 @@
+---
+import '../style/main.css'
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+const { title, description, keywords } = Astro.props
+const { frontmatter } = Astro.props
+---
+
+<html lang="en" class="overflow-x-clip">
+
+
+    <head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="description" content={description}>
+        <meta name="keywords" content={keywords}>
+        <link rel="icon" type="image/png" href="/images/fav.png">		
+        <title>{ frontmatter.name }</title>
+	</head>
+    <body>
+        <Nav />
+    
+        <div>
+            <h1 class="h1">{ frontmatter.name }</h1>
+            <div class="flex justify-between items-start w-2/3 m-auto h-72 ">
+                <div class="w-1/2 h-full">
+                    <img src={ frontmatter.img } alt="" class="h-full">
+                </div>
+                <div class="w-1/2 h-full bg-gray-800 rounded-md border border-gray-600 p-3 flex flex-col justify-between">
+                   <div>
+                        <p class="text-2xl">Specifications</p>
+                        <ul>
+                            { frontmatter.specs.map( spec => <li class="text-gray-400">&#x25CF { spec }</li>) }
+                        </ul>
+                   </div>
+                    <div>
+                        <p class="text-2xl">Description</p>
+                        <p class="text-gray-400"> { frontmatter.description }</p>
+                    </div>
+                    <p class="text-2xl font-semibold text-blue-400">{ frontmatter.price }</p>
+                </div>
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+        
+        <Footer/>
+    </body>
+    
+   
+
+</html>

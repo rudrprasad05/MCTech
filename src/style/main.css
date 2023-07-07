@@ -7,6 +7,10 @@
 
 @layer base {
 
+    .h1 {
+        @apply text-4xl font-semibold text-center my-10
+    }
+
     .star{
         @apply stroke-procyon-pink;
     }

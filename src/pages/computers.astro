@@ -10,9 +10,9 @@ const content = all.slice(0, 4)
 ---
 
 <Base title="Home">
-    <h1 class="text-4xl font-boold text-center my-10">Our Computer Collection</h1>
+    <h1 class="h1">Our Computer Collection</h1>
     
-    <div class="grid grid-cols-4 gap-10 w-4/5 m-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 w-4/5 m-auto">
         {content.map(info => <Card { info }/>)}
     </div>
 
