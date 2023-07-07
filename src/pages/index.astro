@@ -2,22 +2,51 @@
 import '../style/main.css'
 import Base from "../layouts/base.astro";
 import Hero from "../components/Hero.astro";
+import HeroProductCards from '../components/HeroProductCards.astro';
 ---
 
 <Base title="Home">
 
+<Hero 
+    title1="Providing Cutting Edge "
+    title2="Technology to Fiji"
+    imgPath="/images/home_hero.png"
+/>
 
+<p class="h1">Our Products</p>
 
-<!-- about us -->
-<p>About us</p>
-<div>
+<div class="grid w-4/5 grid-cols-3 mx-auto gap-20 mb-20">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati aliquid, animi sint facere quae reprehenderit illo voluptates, quasi itaque, velit dolore. Dicta nesciunt modi fugit debitis quam cum delectus?</p>
-    <div>
-        <img src="/images/about.jpg" alt="">
-    </div>
-    
+    <HeroProductCards 
+        title="computer"
+        imgPath="/images/icon_computer.avif"
+    />
+    <HeroProductCards 
+        title="printers"
+        imgPath="/images/icon_printer.png"
+    />
+    <HeroProductCards 
+        title="network"
+        imgPath="/images/icon_router.avif"
+    />
 
 </div>
+
+<div class="w-full bg-blue-700 h-min py-5 md:py-14 mb-20">
+        
+    <div class="flex items-center flex-col md:flex-row w-4/5  bg-procyon-highlight-purple h-min justify-between mx-auto">
+        <p class="text-white text-2xl md:text-4xl font-extrabold h-min">
+            <span class="italic">Ready</span> to work with us?
+        </p>
+        <div class="">
+        <a href="#contact">
+        <button class="btn text-white font-semibold tracking-wider burningBtn h-min mt-5 md:mt-0">Hire Us</button>
+
+        </a>
+        </div>
+    </div>
+    
+</div>
+
 
 </Base>

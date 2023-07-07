@@ -1,0 +1,47 @@
+---
+const { title, path, imgPath } = Astro.props 
+---
+
+<div>
+    <a href={path}>
+
+        <div class="rounded-md cursor-pointer overflow-x-clip w-full transition h-full relative bg-gray-800 text-center p-10 rounded-md border border-gray-600 flex flex-col gap-5 cont pt-2">
+
+            <div class="img mx-auto z-10 relative">
+                <img src={imgPath} alt="" class="z-10 h-full mx-auto object-contain">
+            </div>
+
+            <div class="flex flex-col gap-5 z-10">
+                <p class="text-2xl capitalize">{title}</p>
+                <a href={path}>
+                    <button class="bg-blue-700 px-8 rounded-md py-2  mx-auto">Our Stock</button>
+                </a>
+                
+            </div>
+        </div>
+
+    </a>
+</div>
+
+<style>
+
+.cont::before{
+    content: "";
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: #1d4ed8;
+    z-index:0;
+
+}
+
+.img{height: 224px;}
+
+.cont:hover{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+    scale: 1.01;
+}
+
+</style>
