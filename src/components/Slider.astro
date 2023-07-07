@@ -1,0 +1,51 @@
+---
+import '../style/main.css';
+---
+
+<div id="sliderholder" class="relative overflow-hidden w-scren my-20">
+    <div id="slider" class=" w-full flex items-center">
+        <div id="" class="slider flex items-center">
+            <img src="/images/slider/acer.png" alt="">
+            <img src="/images/slider/dell.png" alt="">
+            <img src="/images/slider/lenovo.png" alt="">
+            <img src="/images/slider/asus.png" alt="">
+            <img src="/images/slider/cannon.png" alt="">
+        </div>
+        <div id="" class="slider flex items-center ">
+            <img src="/images/slider/acer.png" alt="">
+            <img src="/images/slider/dell.png" alt="">
+            <img src="/images/slider/lenovo.png" alt="">
+            <img src="/images/slider/asus.png" alt="">
+            <img src="/images/slider/cannon.png" alt="">
+        </div>
+        
+    </div>
+</div>
+
+<style is:inline>
+
+#slider {
+    width: calc(250px * 10);
+}
+
+.slider {
+    height: 50px;
+    width: calc(250px * 5);
+    animation: scroll 50s linear infinite;
+}
+
+.slider img {
+    height: 100%;
+    margin-right: 50px;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+</style>
