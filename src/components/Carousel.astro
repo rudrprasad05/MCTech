@@ -1,0 +1,43 @@
+<div class="mb-20 splide w-4/5 bg-gray-800 rounded-md mx-auto overflow-hidden" role="group" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+          </ul>
+    </div>
+  </div>
+
+  <style is:inline>
+
+.splide__arrow svg{
+    fill: #1D4ED8;
+}
+
+.splide__pagination__page {
+    background-color: #7b9eff89;
+}
+
+.splide__pagination__page.is-active {
+    background-color: #1D4ED8 !important;
+}
+
+  </style>
+
+  <script>
+    import '@splidejs/splide/css';
+    import Splide from '@splidejs/splide';
+    new Splide( '.splide' ).mount();
+  </script>
