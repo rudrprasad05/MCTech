@@ -20,21 +20,21 @@ import Carousel from '../components/Carousel.astro';
 
 <p class="h1" id="products">Our Products</p>
 
-<div class="grid w-4/5 grid-cols-3 mx-auto gap-20 mb-20">
+<div class="grid w-4/5 grid-cols-1 md:grid-cols-3 mx-auto gap-20 mb-20">
 
     <HeroProductCards 
         title="computer"
-        imgPath="/images/icon_computer.avif"
+        imgPath="/images/computer.png"
         path="/computers"
     />
     <HeroProductCards 
         title="printers"
-        imgPath="/images/icon_printer.png"
+        imgPath="/images/printer.png"
         path="/printers"
     />
     <HeroProductCards 
         title="network"
-        imgPath="/images/icon_router.avif"
+        imgPath="/images/router.png"
         path="/networks"
     />
 
@@ -50,7 +50,7 @@ import Carousel from '../components/Carousel.astro';
         </p>
         <div class="">
         <a href="#contact">
-            <button class="bg-gray-800 px-8 rounded-md py-2 mx-auto buttons">Hire Us</button>
+            <button class="bg-blue-100 px-8 rounded-md py-2 mx-auto ">Hire Us</button>
         </a>
         </div>
     </div>

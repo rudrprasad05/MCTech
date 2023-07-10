@@ -8,9 +8,9 @@ const { title1, title2, imgPath } = Astro.props
         <img src={ imgPath } alt="" class="h-full w-full object-cover">
     </div>
 
-    <div class="w-4/5 mx-auto flex flex-col gap-20 relative z-20">
+    <div class="w-4/5 mx-auto flex flex-col gap-10 md:gap-20 relative z-20 text-blue-50">
 
-        <p class="text-6xl font-semibold">{ title1 }<br>{ title2 }</p>
+        <p class="text-3xl md:text-6xl font-semibold">{ title1 }<br>{ title2 }</p>
         <div class="flex gap-5">
             <a href="#products">
                 <button class="bg-blue-700 px-8 rounded-md py-2 text-lg">Products</button>

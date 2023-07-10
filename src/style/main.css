@@ -8,7 +8,7 @@
 @layer base {
 
     .h1 {
-        @apply text-4xl font-semibold text-center my-10
+        @apply text-2xl md:text-4xl font-semibold text-center my-10
     }
 
     .star{
@@ -70,8 +70,9 @@
 
 
 body {
-    background-color: #111827;
-    color: white;
+    background-color: #eff6ff;
+    /* tailwind blue 50 👆 */
+    color: black;
     overflow-x: clip;
 }
 
