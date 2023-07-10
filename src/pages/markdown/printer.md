@@ -1,8 +1,9 @@
 ---
-name: HP ProDesk 
-img: /images/computers/hp-prodesk.jpg
-price: $299.99
-description: 6300 SFF, 3rd Gen i5, 4GB, 500GB HDD
+name: Chill Printer
+img: /images/samsung.png
+price: $1499.99
+description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, est.
+tag: "printer"
 specs: 
     - 10th Gen Intel core i7
     - Internal 526GB SSD 

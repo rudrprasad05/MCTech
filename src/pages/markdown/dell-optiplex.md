@@ -3,6 +3,7 @@ name: Dell Optiplex
 img: /images/computers/dell-optiplex.webp
 price: $249.99
 description: 3040 Mini, 6th Gen CPU, 8GB Ram, Windows 10 Pro
+tag: "computer"
 specs: 
     - CPU Intel i3 6100t @ 3.7GHz
     - GPU Intel HD Graphics 630

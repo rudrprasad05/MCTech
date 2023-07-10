@@ -4,8 +4,8 @@ import Card from '../components/Card.astro';
 import Base from "../layouts/base.astro";
 import Hero from "../components/Hero.astro";
 
-const all = await Astro.glob('../pages/printers/*.md');
-const content = all.slice(0, 4)
+const all = await Astro.glob('../pages/markdown/*.md');
+const printer = all.filter((post) => post.frontmatter.tag.includes("printer"));
 
 ---
 
@@ -13,7 +13,7 @@ const content = all.slice(0, 4)
     <h1 class="h1">Our Printer Collection</h1>
     
     <div class="grid grid-cols-1 md:grid-cols-4 gap-10 w-4/5 m-auto">
-        {content.map(info => <Card { info } />)}
+        {printer.map(info => <Card { info } />)}
     </div>
 
     

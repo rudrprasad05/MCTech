@@ -3,6 +3,7 @@ name: HP Workstation
 img: /images/computers/hp-workstation.jpg
 price: $599.99
 description:  Z440 – E5 1620v3 4c/8t Xeon – 16GB – Windows 10 Pro
+tag: "computer"
 specs: 
     - CPU Xeon E5 1620 v3 @ 3.5 – 3.6GHz
     - Core / Thread 4c / 8t 

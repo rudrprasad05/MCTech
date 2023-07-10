@@ -1,10 +1,11 @@
 ---
 name: HP EliteDesk 
-img: /images/computers/hp-elitedesk.webp
+img: /images/computers/hp-elitedesk.jpg
 price: $899.99
-description: 8300 SFF, 3rd Gen i5, 8GB, 500GB HDD
+description: 800 G2 SFF, i7 6700 CPU, 500GB HDD
+tag: "computer"
 specs: 
-    - CPU Intel i5 3470 @ 3.2GHz
+    - CPU Intel i7 6700 @ 3.4GHz
     - GPU Intel HD Graphics 530
     - RAM 8GB
     - Storage 500GB HDD

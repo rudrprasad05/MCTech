@@ -4,16 +4,15 @@ import Card from '../components/Card.astro';
 import Base from "../layouts/base.astro";
 import Hero from "../components/Hero.astro";
 
-const all = await Astro.glob('../pages/networks/*.md');
-const content = all.slice(0, 4)
-
+const all = await Astro.glob('../pages/markdown/*.md');
+const network = all.filter((post) => post.frontmatter.tag.includes("network"));
 ---
 
 <Base title="Home">
     <h1 class="h1">Our Networks Collection</h1>
     
     <div class="grid grid-cols-1 md:grid-cols-4 gap-10 w-4/5 m-auto">
-        {all.map(info => <Card { info } />)} 
+        {network.map(info => <Card { info } />)} 
     </div>
 
     
