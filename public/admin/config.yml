@@ -20,7 +20,7 @@ collections:
       - {label: "Specs", name: "specs", widget: "string"}
       - {label: "Price", name: "price", widget: "string"}
 
-collections:
+
   - name: "Networks" # Used in routes, e.g., /admin/collections/blog
     label: "Networks" # Used in the UI
     folder: "src/pages/networks" # The path to the folder where the documents are stored
@@ -35,7 +35,7 @@ collections:
       - {label: "Specs", name: "specs", widget: "string"}
       - {label: "Price", name: "price", widget: "string"}
 
-collections:
+
   - name: "printers" # Used in routes, e.g., /admin/collections/blog
     label: "Printers" # Used in the UI
     folder: "src/pages/printers" # The path to the folder where the documents are stored
