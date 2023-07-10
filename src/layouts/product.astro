@@ -9,6 +9,7 @@ const { frontmatter } = Astro.props
 
 
 
+
 ---
 
 <html lang="en" class="overflow-x-clip">
@@ -39,6 +40,7 @@ const { frontmatter } = Astro.props
                         <ul class="">
                             { frontmatter.specs.map( spec => <li class="">&rarr; { spec }</li>) }
                         </ul>
+                       
                    </div>
                     <div class="mb-5">
                         <p class="text-2xl">Description</p>
