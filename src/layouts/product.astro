@@ -21,6 +21,7 @@ const { frontmatter } = Astro.props
         <meta name="keywords" content={keywords}>
         <link rel="icon" type="image/png" href="/images/fav.png">		
         <title>{ frontmatter.name }</title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	</head>
     <body id="body">
         <Nav />
@@ -54,6 +55,18 @@ const { frontmatter } = Astro.props
         
         <Footer/>
     </body>
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
     
    
 
