@@ -4,8 +4,7 @@ import Card from '../components/Card.astro';
 import Base from "../layouts/base.astro";
 import Hero from "../components/Hero.astro";
 
-const all = await Astro.glob('../pages/markdown/*.md');
-const computer = all.filter((post) => post.frontmatter.tag.includes("computer"));
+const all = await Astro.glob('../pages/computers/*.md');
 
 ---
 
@@ -13,7 +12,7 @@ const computer = all.filter((post) => post.frontmatter.tag.includes("computer"))
     <h1 class="h1">Our Computer Collection</h1>
     
    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 w-4/5 m-auto">
-        {computer.map(info => <Card { info } />)} 
+        {all.map(info => <Card { info } />)} 
     </div>
 
     
