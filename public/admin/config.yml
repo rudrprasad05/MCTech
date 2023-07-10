@@ -16,6 +16,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/product.astro"}
       - {label: "Title", name: "name", widget: "string"}
+      - { label: "Tags", name: "tag", widget: "list", default: "computer" }
       - {label: "Featured Image", name: "img", widget: "image"}
       - {label: "Body", name: "description", widget: "markdown"}
       - {label: "Specs", name: "specs", widget: "list"}
