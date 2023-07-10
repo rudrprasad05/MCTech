@@ -6,6 +6,9 @@ import Card from '../components/Card.astro';
 
 const { title, description, keywords } = Astro.props
 const { frontmatter } = Astro.props
+const spec = frontmatter.specs
+const specs_text = spec.split(",")
+
 
 
 ---
@@ -36,7 +39,7 @@ const { frontmatter } = Astro.props
                    <div class="mb-5">
                         <p class="text-2xl">Specifications</p>
                         <ul class="">
-                            { frontmatter.specs.map( spec => <li class="">&rarr; { spec }</li>) }
+                            { specs_text.map( spec => <li class="">&rarr; { spec }</li>) }
                         </ul>
                    </div>
                     <div class="mb-5">
