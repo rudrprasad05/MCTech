@@ -10,7 +10,7 @@ collections:
     label: "Computers" # Used in the UI
     folder: "src/pages/computers" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: slug: "{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/product.astro"}
       - {label: "Title", name: "name", widget: "string"}
@@ -25,7 +25,7 @@ collections:
     label: "Networks" # Used in the UI
     folder: "src/pages/networks" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: slug: "{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/product.astro"}
       - {label: "Title", name: "name", widget: "string"}
@@ -40,7 +40,7 @@ collections:
     label: "Printers" # Used in the UI
     folder: "src/pages/printers" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: slug: "{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "../../layouts/product.astro"}
       - {label: "Title", name: "name", widget: "string"}
