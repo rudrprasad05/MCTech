@@ -24,13 +24,21 @@
 
 .splide__arrow svg{
     fill: #1D4ED8;
+    
+}
+
+.your-class-arrow{
+
+  background: #eff6ff;
 }
 
 .splide__pagination__page {
     background-color: #7b9eff89;
 }
 
+
 .splide__pagination__page.is-active {
+    width: 10px;
     background-color: #1D4ED8 !important;
 }
 
@@ -39,5 +47,12 @@
   <script>
     import '@splidejs/splide/css';
     import Splide from '@splidejs/splide';
-    new Splide( '.splide' ).mount();
+    var splide = new Splide( '.splide', {
+      classes: {
+        arrow : 'splide__arrow your-class-arrow',
+      }
+    })
+    
+    
+    splide.mount();
   </script>

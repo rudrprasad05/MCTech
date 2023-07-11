@@ -1,4 +1,8 @@
-<nav class="md:flex items-center justify-between md:p-5 text-white h-10v z-20 w-full bg-blue-700">
+---
+const {className} = Astro.props
+---
+
+<nav class="md:flex items-center justify-between md:p-5 text-white relative h-10v z-50 w-full bg-blue-700">
    <div class="ml-5 font-semibold text-xl flex items-center justify-between h-full">
     <a href="/">Mctech Computers</a> 
     <svg id="ham" class=" h-16 w-16 ham hamRotate ham1 block md:hidden" viewBox="0 0 100 100" width="80" onclick="toggle()">
@@ -15,6 +19,7 @@
 </div>
 <ul id="nav" class="bg-blue-700 md:bg-transparent absolute md:relative transition w-full h-90v md:h-min md:w-auto left-0 md:p-0 p-3 opacity-0 md:opacity-100 md:pointer-events-auto  pointer-events-none flex items-center flex-col md:flex-row z-50 justify-around">
     <li class="md:mr-5 mt-2 md:mt-0 hover:text-gray-800 transition"><a href="/">Home</a></li>
+    <li class="md:mr-5 mt-2 md:mt-0 hover:text-gray-800 transition"><a href="/about">About</a></li>
     <li class="md:mr-5 mt-2 md:mt-0 hover:text-gray-800 transition"><a href="/computers">Computers</a></li>
     <li class="md:mr-5 mt-2 md:mt-0 hover:text-gray-800 transition"><a href="/printers">Printers</a></li>
     <li class="md:mr-5 mt-2 md:mt-0 hover:text-gray-800 transition"><a href="/networks">Networks</a></li>

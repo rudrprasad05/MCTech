@@ -1,26 +1,56 @@
 ---
 const { title1, title2, imgPath } = Astro.props
+
 ---
 
 <div class="grid place-items-center h-90v relative">
 
-    <div class="absolute top-0 left-0 z-10 h-full w-full">
+    <div class="absolute bottom-0 right-0 z-10 w-screen h-screen md:block hidden">
         <img src={ imgPath } alt="" class="h-full w-full object-cover">
     </div>
 
-    <div class="w-4/5 mx-auto flex flex-col gap-10 md:gap-20 relative z-20 text-blue-50">
 
-        <p class="text-3xl md:text-6xl font-semibold">{ title1 }<br>{ title2 }</p>
-        <div class="flex gap-5">
-            <a href="#products">
-                <button class="bg-blue-700 px-8 rounded-md py-2 text-lg">Products</button>
-            </a>
-            <a href="#contact">
-                <button class="bg-blue-700 px-8 rounded-md py-2 text-lg">Contact</button>
-            </a>
-        </div>
+    <div class="w-4/5 mx-auto flex flex-col gap-10 md:gap-20 relative z-20 text-black">
+
+        <p class="text-3xl md:text-6xl font-semibold md:text-left text-center">{ title1 }<br>{ title2 }</p>
+                
+        
+            <div class="flex md:w-1/3 w-full md:gap-10 text-center md:text-base text-sm">
+                <a href="/computers">
+                    <div>
+                        <div><img src="/svg/computer.svg" alt="home-icon" class="md:w-4/5 w-1/2 mx-auto"></div>
+                        <p>Computers</p>
+                    </div>
+                </a>
+
+                 <a href="/printers">
+                    <div>
+                        <div><img src="/svg/printer.svg" alt="printer-icon" class="md:w-4/5 w-1/2 mx-auto"></div>
+                        <p>Printers</p>
+                    </div>
+               </a>
+
+                <a href="/networks">
+                    <div>
+                        <div><img src="/svg/network.svg" alt="wifi-icon" class="md:w-4/5 w-1/2 mx-auto"></div>
+                        <p>Networks</p>
+                    </div>
+                </a>
+                    
+              
+                
+            </div>
+
+            <div class="flex gap-5 text-blue-50">
+                <a href="#products">
+                    <button class="bg-blue-700 px-8 rounded-md py-2 md:text-lg text-sm">Products</button>
+                </a>
+                <a href="#contact">
+                    <button class="bg-blue-700 px-8 rounded-md py-2 md:text-lg text-sm">Contact</button>
+                </a>
+            </div>
 
 
-    </div>
+     </div>
 
 </div>
