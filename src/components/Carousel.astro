@@ -1,18 +1,24 @@
-<section id="image-carousel" class="splide" aria-label="Beautiful Images">
-  <div class="splide__track">
-		<ul class="splide__list">
-			<li class="splide__slide">
-				<img src="images/carousel.jpg" alt="">
-			</li>
-			<li class="splide__slide">
-				<img src="images/carousel.jpg" alt="">
-			</li>
-			<li class="splide__slide">
-				<img src="images/carousel.jpg" alt="">
-			</li>
-		</ul>
+<div id="image-carousel" class="lift mb-20 splide w-4/5 bg-gray-800 rounded-md mx-auto overflow-hidden" role="group" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+              <li class="splide__slide h-96">
+                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
+              </li>
+          </ul>
+    </div>
   </div>
-</section>
 
 <style>
 
@@ -21,10 +27,25 @@
   height: auto;
 }
 
+.splide__arrow svg{
+    fill: #eff6ff;
+
+}
+
+.splide__pagination__page {
+    background-color: pink;
+}
+
+.splide__pagination__page .is-active {
+    background-color: #eff6ff !important;
+}
+
 </style>
 
 <script>
-  document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '#image-carousel' ).mount();
-  } );
+  
+    import '@splidejs/splide/css';
+    import Splide from '@splidejs/splide';
+    new Splide( '.splide' ).mount();
+
 </script>
