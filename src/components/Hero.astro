@@ -3,10 +3,10 @@ const { title1, title2, imgPath } = Astro.props
 
 ---
 
-<div class="grid place-items-center h-90v relative">
+<div class="grid place-items-center h-90v relative ">
 
     <div class="absolute bottom-0 right-0 z-10 w-screen h-screen md:block hidden">
-        <img src={ imgPath } alt="" class="h-full w-full object-cover">
+        <img src={ imgPath } alt="" class="h-full w-full object-cover object-right">
     </div>
 
 
@@ -41,7 +41,7 @@ const { title1, title2, imgPath } = Astro.props
                 
             </div>
 
-            <div class="flex gap-5 text-blue-50">
+            <div class="flex gap-5 text-blue-50 md:justify-start justify-center">
                 <a href="#products">
                     <button class="bg-blue-700 px-8 rounded-md py-2 md:text-lg text-sm">Products</button>
                 </a>
