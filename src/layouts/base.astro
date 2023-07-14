@@ -15,7 +15,9 @@ const { title, description, keywords } = Astro.props
         <meta name="keywords" content={keywords}>
         <link rel="icon" type="image/png" href="/images/logo.png">	
         <title>{title}</title>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        
+      
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 	</head>
     <body id="body">
         <Nav />
@@ -37,7 +39,8 @@ const { title, description, keywords } = Astro.props
     });
   }
 </script>
-    
+  
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
    
 
 </html>

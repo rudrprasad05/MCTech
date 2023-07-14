@@ -1,43 +1,30 @@
-<div class="splide" role="group" aria-label="Splide Basic HTML Example">
-    <div class="splide__track">
-          <ul class="splide__list">
-              <li class="splide__slide h-96">
-                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
-              </li>
-              <li class="splide__slide h-96">
-                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
-              </li>
-              <li class="splide__slide h-96">
-                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
-              </li>
-              <li class="splide__slide h-96">
-                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
-              </li>
-              <li class="splide__slide h-96">
-                <img src="/images/carousel.jpg" alt="" class="h-full w-full object-cover">
-              </li>
-          </ul>
-    </div>
+<section id="image-carousel" class="splide" aria-label="Beautiful Images">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="images/carousel.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="images/carousel.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="images/carousel.jpg" alt="">
+			</li>
+		</ul>
   </div>
+</section>
 
-  <style is:inline>
+<style>
 
-.splide__arrow svg{
-    fill: #1D4ED8;
+.splide__slide img {
+  width: 100%;
+  height: auto;
 }
 
-.splide__pagination__page {
-    background-color: #7b9eff89;
-}
+</style>
 
-.splide__pagination__page.is-active {
-    background-color: #1D4ED8 !important;
-}
-
-  </style>
-
-  <script>
-    import '@splidejs/splide/css';
-    import Splide from '@splidejs/splide';
-    new Splide( '.splide' ).mount();
-  </script>
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel' ).mount();
+  } );
+</script>
