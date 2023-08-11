@@ -1,0 +1,19 @@
+---
+import '../style/main.css'
+import Card from '../components/Card.astro';
+import Base from "../layouts/base.astro";
+import Hero from "../components/Hero.astro";
+
+const all = await Astro.glob('../pages/accessories/*.md');
+
+---
+
+<Base title="Home">
+    <h1 class="h1">Our Accessories Collection</h1>
+    
+   <div class="grid grid-cols-1 md:grid-cols-4 gap-10 w-4/5 m-auto">
+        {all.map(info => <Card { info } />)} 
+    </div>
+
+    
+</Base>
