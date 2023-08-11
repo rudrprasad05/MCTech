@@ -2,18 +2,46 @@
 import '../style/main.css'
 import Card from '../components/Card.astro';
 import Base from "../layouts/base.astro";
-import Hero from "../components/Hero.astro";
-
 const all = await Astro.glob('../pages/computers/*.md');
-
 ---
 
 <Base title="Home">
     <h1 class="h1">Our Computer Collection</h1>
     
+    <div  class="border-2 border-blue-700  rounded-md flex items-center gap-2 mb-10 w-4/5 mx-auto overflow-hidden">
+        <input placeholder="Search product name" type="text" name="" id="search" class="search bg-blue-50 p-2 w-full outline-none">
+        <button type="submit" class="py-2 px-4 bg-blue-700 text-white flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+              </button>
+    </div>
+    
    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 w-4/5 m-auto">
-        {all.map(info => <Card { info } />)} 
+        {
+            all.map(info => <Card { info } />)
+         } 
     </div>
 
     
 </Base>
+
+<script>
+    const form = document.querySelector("#search")
+    form.addEventListener("input", (e) => {
+        e.preventDefault()
+        const blogPosts = [...document.querySelectorAll('.blog-post')]; 
+        const query = document.querySelector("#search").value.toLocaleLowerCase()
+        blogPosts.forEach(post => {
+            const title = post.querySelector('.post-title').textContent.toLowerCase();
+            const content = post.querySelector('.post-content').textContent.toLowerCase();
+            if (title.includes(query) || content.includes(query)) {
+                post.style.display = 'block';
+            } else {
+                post.style.display = 'none';
+            }
+        })
+    })
+</script>
+
+
