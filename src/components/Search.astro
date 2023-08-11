@@ -20,6 +20,7 @@
             const content = post.querySelector('.post-content').textContent.toLowerCase();
             if (title.includes(query) || content.includes(query) || tag.includes(query)) {
                 post.style.display = 'block';
+                console.log("trying to remove")
             } else {
                 post.style.display = 'none';
             }
