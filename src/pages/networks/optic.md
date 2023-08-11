@@ -1,6 +1,6 @@
 ---
-name: Ethernet Cable
-img: /images/networks/ethernet.png
+name: Optic Fibre
+img: /images/networks/optic.png
 price: $1499.99
 description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, est.
 tag: "network"
