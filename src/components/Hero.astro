@@ -3,23 +3,23 @@ const { title1, title2, imgPath } = Astro.props
 import '@splidejs/splide/css';
 ---
 
-<div class="flex items-center justify-center h-90v relative">
+<div class="flex items-center justify-center h-90v relative md:mt-0 mt-10">
 
     <div class="absolute bottom-0 right-0 z-10 w-screen h-screen md:block hidden">
         <img src={ imgPath } alt="" class="h-full w-full object-cover object-right">
     </div>
 
 
-    <div class="w-full md:w-4/5  mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-20 relative z-20 text-black">
+    <div class="w-full md:w-4/5  mx-auto flex flex-col md:flex-row justify-between items-center md:gap-10  relative z-20 text-black">
 
-        <div>
+        <div class="grid gap-5">
             <p class="text-3xl md:text-6xl font-semibold md:text-left text-center">{ title1 }<br>{ title2 }</p>
                         
                 
-            <div class="flex md:w-1/3 w-full md:gap-10 text-center md:text-base text-sm">
+            <div class="flex md:w-2/3 w-full md:gap-10 text-center md:text-base text-sm">
                 <a href="/computers">
                     <div>
-                        <div><img src="/svg/computer.svg" alt="home-icon" class="md:w-4/5 w-1/2 mx-auto"></div>
+                        <div><img src="/svg/computer.svg" alt="home-icon" class="md:w-4/5 w-2/3 mx-auto"></div>
                         <p>Computers</p>
                     </div>
                 </a>
@@ -59,13 +59,13 @@ import '@splidejs/splide/css';
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide h-full">
-        <img class="h-full w-full object-center object-fit" src="images/heroo.png" alt="">
+        <img class="h-full w-full object-center object-fit" src="images/hero1.png" alt="">
       </div>
       <div class="swiper-slide h-full">
-        <img class="h-full w-full object-center object-fit" src="images/heroo.png" alt="">
+        <img class="h-full w-full object-center object-fit" src="images/hero2.png" alt="">
       </div>
       <div class="swiper-slide h-full">
-        <img class="h-full w-full object-center object-fit" src="images/heroo.png" alt="">
+        <img class="h-full w-full object-center object-fit" src="images/hero3.png" alt="">
       </div>
     </div>
   </div>
