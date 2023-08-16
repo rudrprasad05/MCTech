@@ -3,14 +3,14 @@ const { title1, title2, imgPath } = Astro.props
 import '@splidejs/splide/css';
 ---
 
-<div class="grid place-items-center h-90v relative ">
+<div class="flex items-center justify-center h-90v relative">
 
     <div class="absolute bottom-0 right-0 z-10 w-screen h-screen md:block hidden">
-        <!-- <img src={ imgPath } alt="" class="h-full w-full object-cover object-right"> -->
+        <img src={ imgPath } alt="" class="h-full w-full object-cover object-right">
     </div>
 
 
-    <div class="w-4/5 mx-auto flex flex-row justify-between items-center gap-10 md:gap-20 relative z-20 text-black">
+    <div class="w-full md:w-4/5  mx-auto flex flex-col md:flex-row justify-between items-center gap-10 md:gap-20 relative z-20 text-black">
 
         <div>
             <p class="text-3xl md:text-6xl font-semibold md:text-left text-center">{ title1 }<br>{ title2 }</p>
@@ -79,32 +79,42 @@ import '@splidejs/splide/css';
         width: 1000px;
         height: 350px;
         }
+
+      @media only screen and (max-width: 600px) {
+        .swiper {
+        width: 95vw;
+        height: 250px;
+        margin-top: 50px;
+        }
+      }
 </style>
 
 <script >
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { LOOP } from '@splidejs/splide';
 
 // init Swiper:
 const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
-  modules: [Navigation, Pagination, Autoplay],
+  modules: [Navigation, Pagination, Autoplay, EffectFade ],
     // Optional parameters
     direction: 'horizontal',
-  loop: true,
-
+    loop: true,
+    speed: 1000,
+ 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
 
   autoplay: {
-        delay: 2500,
+        delay: 2000,
         disableOnInteraction: false,
       },
 

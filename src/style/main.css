@@ -1,6 +1,5 @@
 /* Google font imports to see which fits best  */
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
