@@ -1,14 +1,15 @@
 ---
 const { info } = Astro.props
 ---
-<div class="h-full relative">
-    <a href={ info.url }>
+<div class="h-full relative blog-post">
+    <a href={ info.url } class="">
 
-        <div class="col-span-1 bg-z-800 rounded-md shadow-xl p-3 blog-post">
+        <div class="col-span-1 bg-z-800 rounded-md shadow-xl p-3 ">
             <div class="min-h-54 md:h-60 rounded-md my-3">
                 <img src={ info.frontmatter.img } alt="" class="transition w-full h-full object-cover mix-blend-multiply">
             </div>
             <h3 class="text-lg post-title">{ info.frontmatter.name }</h3>
+            <p class="post-tag hidden">{info.frontmatter.tag}</p>
             <h3 class="text-slate-500 post-content">{ info.frontmatter.description }</h3>
             <h3 class="font-extrabold tracking-wider text-lg text-blue-700">{ info.frontmatter.price }</h3>
         </div>

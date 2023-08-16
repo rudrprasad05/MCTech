@@ -1,6 +1,6 @@
 ---
-name: Ethernet Cable
-img: /images/networks/ethernet.png
+name: CCTV Camera
+img: /images/networks/cctv.png
 price: $1499.99
 description: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, est.
 tag: "network"
