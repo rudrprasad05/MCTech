@@ -6,8 +6,8 @@ media_folder: "public/images" # Media files will be stored in the repo under sta
 public_folder: "/images"
 
 collections:
-  - name: "computers" # Used in routes, e.g., /admin/collections/blog
-    label: "Computers" # Used in the UI
+  - name: "desktop" # Used in routes, e.g., /admin/collections/blog
+    label: "Desktop" # Used in the UI
     folder: "src/pages/computers" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
