@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/product.astro
-name: KEYBOARD
+name: WIRED KEYBOARD
 tag:
   - KEYBOARD
 img: /images/2d3308583f7b1cdaa053d73448e36dd3.jpg
