@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/product.astro
-name: USB FLASH DRIVE
+name: 32GB USB FLASH DRIVE
 tag:
   - STORAGE
 img: /images/w555_h400_q80.png
