@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/product.astro
-name: HP ELITEBOOK LAPTOP
+name: HP ELITEBOOK BUSINESS CLASS LAPTOP
 tag: computer
 img: /images/hp-elitebook.jpg
 description: HP ELITEBOOK 1040 G4 BUSINESS CLASS LAPTOP
