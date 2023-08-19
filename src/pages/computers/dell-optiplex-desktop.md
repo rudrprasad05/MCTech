@@ -12,5 +12,5 @@ specs:
   - DVD RW DISC DRIVE
   - WINDOWS 10 PROFESSIONAL
   - MICROSOFT OFFICE 2019
-price: $500.00
+price: $499.99
 ---
