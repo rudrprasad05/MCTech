@@ -1,13 +1,14 @@
 ---
-name: HP ProDesk 
-img: /images/computers/hp-prodesk.jpg
-price: $299.99
-description: 6300 SFF, 3rd Gen i5, 4GB, 500GB HDD
-tag: "computer"
-specs: 
-    - 10th Gen Intel core i7
-    - Internal 526GB SSD 
-    - 1080p @ 60Hz Display
-    - Killer Ethernet Wi-Fi 6
 layout: ../../layouts/product.astro
+name: HP ELITE 6300 SFF DESKTOP
+tag: computer
+img: /images/computers/hp-prodesk.jpg
+description: HP COMPAQ ELITE 6300 SFF DESKTOP
+specs:
+  - CPU INTEL CORE i7 3770@ 3.40GHz UPTO 3.90GHz
+  - RAM 4GB
+  - STORAGE 500GB HDD
+  - WINDOWS 10 PROFESSIONAL
+  - MICROSOFT OFFICE 2019
+price: $299.99
 ---
