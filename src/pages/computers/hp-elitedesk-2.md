@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/product.astro
-name: HP EliteDesk
+name: HP ELITEDESK 800 G2 SFF
 tag: computer
 img: /images/61db5bmky2l._ac_sl1500_.jpg
 description: HP ELITEDESK 800 G2 SFF BUSINESS CLASS DESKTOP
