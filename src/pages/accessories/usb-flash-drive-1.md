@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/product.astro
-name: USB FLASH DRIVE
+name: 16GB USB FLASH DRIVE
 tag:
   - STORAGE
 img: /images/6_1.jpg
