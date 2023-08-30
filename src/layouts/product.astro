@@ -24,6 +24,7 @@ const { frontmatter } = Astro.props
         <link rel="icon" type="image/png" href="/images/logo.png">		
         <title>{ frontmatter.name }</title>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <script src="https://paypal.com/sdk/js?debug=true&client-id=AWPk0BgwxNjRmX5Xm3sky2_3br58uBVe4j5sUX4q9hiQHhOnsL2XHVtCV1M_brEI7G6l57U16gQt4chE"></script>
 	</head>
     <body id="body">
         <Nav />
@@ -47,6 +48,7 @@ const { frontmatter } = Astro.props
                         <p class=""> { frontmatter.description }</p>
                     </div>
                     <p class="text-2xl font-semibold text-blue-600">{ frontmatter.price }</p>
+                    <div id="paypal"></div>
                 </div>
             </div>
 
@@ -59,7 +61,7 @@ const { frontmatter } = Astro.props
         <Footer/>
     </body>
 
-    <script>
+<script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
@@ -69,6 +71,33 @@ const { frontmatter } = Astro.props
       }
     });
   }
+
+  paypal.Buttons({
+          // Order is created on the server and the order id is returned
+          createOrder: (data, actions) => {
+          return fetch("/api/orders", {
+              method: "post",
+              // use the "body" param to optionally pass additional order information
+              // like product skus and quantities
+          })
+          .then((response) => response.json())
+          .then((order) => order.id);
+          },
+          // Finalize the transaction on the server after payer approval
+          onApprove: (data, actions) => {
+          return fetch(`/api/orders/${data.orderID}/capture`, {
+              method: "post",
+          })
+          .then((response) => response.json())
+          .then((orderData) => {
+              
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+              const transaction = orderData.purchase_units[0].payments.captures[0];
+              alert(`Transaction ${transaction.status}: ${transaction.id}\n\nSee console for all available details`);
+              
+          });
+          }
+      }).render('#paypal');
 </script>
     
    
