@@ -1,13 +1,13 @@
 ---
-name: HP EliteDesk 
-img: /images/computers/hp-elitedesk.jpg
-price: $899.99
-description: 800 G2 SFF, i7 6700 CPU, 500GB HDD
-tag: "computer"
-specs: 
-    - CPU Intel i7 6700 @ 3.4GHz
-    - GPU Intel HD Graphics 530
-    - RAM 8GB
-    - Storage 500GB HDD
 layout: ../../layouts/product.astro
+name: WIFI ADAPTER
+tag:
+  - WIFI
+img: /images/ba37befc3ad730cdbd2144fee2d36b0e.jpg
+description: 802.11n/g/b HIGH SPEED WIFI ADAPTER.
+specs:
+  - SPEED 150MBPS
+  - 2.4GHz CHANNEL
+  - TYPE USB 2.0
+price: $25.00
 ---
